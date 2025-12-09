@@ -1,5 +1,6 @@
-# neo-vim-configa
+# neo-vim-config
 
+```powershell
 # 1) Find gcc.exe inside the WinLibs package
 $gcc = Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UC*" -Recurse -Filter gcc.exe -ErrorAction SilentlyContinue |
   Select-Object -First 1 -ExpandProperty FullName
@@ -20,3 +21,5 @@ if (-not $gcc) {
   # 4) Verify
   gcc --version
 }
+
+```
